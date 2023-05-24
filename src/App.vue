@@ -3,9 +3,6 @@
     <v-main class="justify-center">
       <nav class="my-3 d-flex justify-space-around">
         |<router-link :to="{ name: 'home' }">Home</router-link> |
-        <router-link :to="{ name: 'login' }">Login</router-link> |
-        <router-link :to="{ name: 'dashboard' }">Dashboard</router-link> |
-        <router-link :to="{ name: 'pagenotfound' }">nf</router-link> |
       </nav>
       <router-view/>
     </v-main>
@@ -13,7 +10,6 @@
 </template>
 
 <script>
-import teste from "./views/teste.vue";
 export default {
   computed: {
     // oculta o nav quando for pagina de login
