@@ -1,9 +1,9 @@
 <template>
   <v-app>
     <v-main class="justify-center">
-      <nav class="my-3 d-flex justify-space-around">
+      <!-- <nav class="my-3 d-flex justify-space-around">
         |<router-link :to="{ name: 'home' }">Home</router-link> |
-      </nav>
+      </nav> -->
       <router-view/>
     </v-main>
   </v-app>
