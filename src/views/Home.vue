@@ -28,7 +28,7 @@
                 <v-card-subtitle
                     class="colorfontsubtitle fontsizesubtitle"
                 >
-                    Desenvolvedor Front-End
+                    Front-End Web Developer
                 </v-card-subtitle>
             </v-col>
         </v-app-bar>
@@ -41,30 +41,102 @@
                 
             >
                     <v-card
-                        class="bg-basil rounded-xl"
+                        class="bg-basil rounded-xl pa-3"
                     >
-                        <v-row>
+                        <v-row class="d-flex justify-space-around">
 
                             <v-col
                                 cols="3"
-                                class="ma-0 pa-0"
-                                justify="center" 
-                                align="center"
+                                class="iconcenter d-flex ma-0 pa-0"
                             >
-                                <v-icon icon="mdi-email-open">
-    
-                                </v-icon>
+                                <v-icon icon="mdi-email-open" size="x-large"/>
     
                             </v-col>
                             <v-col
                                 cols="9"
-                                class="ma-0 pa-0"
                             >
-                                <v-card-title>Email Address</v-card-title>
-                                <v-card-text>gustavochiroli@hotmail.com</v-card-text>
+                                <v-card-title class="ma-0 pa-0">Email Address</v-card-title>
+                                <v-card-text class="ma-0 pa-0">gustavochiroli@hotmail.com</v-card-text>
                             </v-col>
                         </v-row>
-                        
+                        <v-divider class="my-2"/>
+                        <v-row class="d-flex justify-space-around">
+
+                            <v-col
+                                cols="3"
+                                class="iconcenter d-flex ma-0 pa-0"
+                            >
+                                <v-icon icon="mdi-cake-layered" size="x-large"/>
+
+                            </v-col>
+                            <v-col
+                                cols="9"
+                            >
+                                <v-card-title class="ma-0 pa-0">Birthday</v-card-title>
+                                <v-card-text class="ma-0 pa-0">19/june/1994</v-card-text>
+                            </v-col>
+                        </v-row>
+                        <v-divider class="my-2"/>
+                        <v-row class="d-flex justify-space-around">
+
+                            <v-col
+                                cols="3"
+                                class="iconcenter d-flex ma-0 pa-0"
+                            >
+                                <v-icon icon="mdi-map-marker" size="x-large"/>
+
+                            </v-col>
+                            <v-col
+                                cols="9"
+                            >
+                                <v-card-title class="ma-0 pa-0">Location</v-card-title>
+                                <v-card-text class="ma-0 pa-0">Florianópolis, Brasil</v-card-text>
+                            </v-col>
+                        </v-row>
+                        <v-divider class="my-2"/>
+                        <v-row class="d-flex justify-space-around">
+
+                            <v-col
+                                cols="3"
+                                class="iconcenter d-flex ma-0 pa-0"
+                            >
+                                <v-icon icon="mdi-linkedin" size="x-large"/>
+
+                            </v-col>
+                            <v-col
+                                cols="9"
+                            >
+                                <v-card-title class="ma-0 pa-0">Linkedin</v-card-title>
+                                <a 
+                                    href="https://www.linkedin.com/in/gustavo-da-silva-chiroli-7788ba212/" target="_blank"
+                                >
+                                    Check out my Linkedin
+                                </a>
+                            </v-col>
+                        </v-row>
+                        <v-divider class="my-2"/>
+                        <v-row class="d-flex justify-space-around">
+
+                            <v-col
+                                cols="3"
+                                class="iconcenter d-flex ma-0 pa-0"
+                            >
+                                <v-icon icon="mdi-github" size="x-large"/>
+
+                            </v-col>
+                            <v-col
+                                cols="9"
+                            >
+                                <v-card-title class="ma-0 pa-0">GitHub</v-card-title>
+                                <a 
+                                    href="https://github.com/GustaChiroli" 
+                                    target="_blank"
+                                >
+                                    Check out my GitHub
+                                </a>
+                            </v-col>
+                        </v-row>
+                                                    
 
                     </v-card>
             </v-col>
@@ -176,6 +248,11 @@ export default {
 }
 .text-basil {
     color: #feffff !important;
+}
+
+.iconcenter {
+    align-items: center !important;
+    justify-content: center !important;
 }
 
 </style>
