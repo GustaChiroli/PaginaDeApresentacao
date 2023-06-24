@@ -33,119 +33,140 @@
             </v-col>
         </v-app-bar>
         <v-row
-            class="px-3 pt-5"
+            class="px-2 pt-5"
         >
 
             <v-col
                 cols="3"
-                
+                class="pr-2"
             >
-                    <v-card
-                        class="bg-basil rounded-xl pa-3"
-                    >
-                        <v-row class="d-flex justify-space-around">
+                <v-card
+                    class="bg-basil rounded-xl pa-3 mb-5"
+                >
+                    <a href="https://codeload.github.com/GustaChiroli/MyFiles/zip/refs/heads/main">
 
+                        <v-row class="d-flex justify-space-around">
                             <v-col
                                 cols="3"
                                 class="iconcenter d-flex ma-0 pa-0"
                             >
-                                <v-icon icon="mdi-email-open" size="x-large"/>
+                                <v-icon icon="mdi-download-box-outline" size="x-large"/>
     
                             </v-col>
                             <v-col
                                 cols="9"
                             >
-                                <v-card-title class="ma-0 pa-0">Email Address</v-card-title>
-                                <v-card-text class="ma-0 pa-0">gustavochiroli@hotmail.com</v-card-text>
+                                <v-card-title class="ma-0 pa-0">Download Curriculum</v-card-title>
                             </v-col>
                         </v-row>
-                        <v-divider class="my-2"/>
-                        <v-row class="d-flex justify-space-around">
+                    </a>
+                </v-card>
+                <v-card
+                    class="bg-basil rounded-xl pa-3"
+                >
+                    <v-row class="d-flex justify-space-around">
 
-                            <v-col
-                                cols="3"
-                                class="iconcenter d-flex ma-0 pa-0"
+                        <v-col
+                            cols="3"
+                            class="iconcenter d-flex ma-0 pa-0"
+                        >
+                            <v-icon icon="mdi-email-open" size="x-large"/>
+
+                        </v-col>
+                        <v-col
+                            cols="9"
+                        >
+                            <v-card-title class="ma-0 pa-0">Email Address</v-card-title>
+                            <v-card-text class="ma-0 pa-0">gustavochiroli@hotmail.com</v-card-text>
+                        </v-col>
+                    </v-row>
+                    <v-divider class="my-2"/>
+                    <v-row class="d-flex justify-space-around">
+
+                        <v-col
+                            cols="3"
+                            class="iconcenter d-flex ma-0 pa-0"
+                        >
+                            <v-icon icon="mdi-cake-layered" size="x-large"/>
+
+                        </v-col>
+                        <v-col
+                            cols="9"
+                        >
+                            <v-card-title class="ma-0 pa-0">Birthday</v-card-title>
+                            <v-card-text class="ma-0 pa-0">19/june/1994</v-card-text>
+                        </v-col>
+                    </v-row>
+                    <v-divider class="my-2"/>
+                    <v-row class="d-flex justify-space-around">
+
+                        <v-col
+                            cols="3"
+                            class="iconcenter d-flex ma-0 pa-0"
+                        >
+                            <v-icon icon="mdi-map-marker" size="x-large"/>
+
+                        </v-col>
+                        <v-col
+                            cols="9"
+                        >
+                            <v-card-title class="ma-0 pa-0">Location</v-card-title>
+                            <v-card-text class="ma-0 pa-0">Florianópolis, Brasil</v-card-text>
+                        </v-col>
+                    </v-row>
+                    <v-divider class="my-2"/>
+                    <v-row class="d-flex justify-space-around">
+
+                        <v-col
+                            cols="3"
+                            class="iconcenter d-flex ma-0 pa-0"
+                        >
+                            <v-icon icon="mdi-linkedin" size="x-large"/>
+
+                        </v-col>
+                        <v-col
+                            cols="9"
+                        >
+                            <v-card-title class="ma-0 pa-0">Linkedin</v-card-title>
+                            <a 
+                                href="https://www.linkedin.com/in/gustavo-da-silva-chiroli-7788ba212/" target="_blank"
                             >
-                                <v-icon icon="mdi-cake-layered" size="x-large"/>
+                                Check out my Linkedin
+                            </a>
+                        </v-col>
+                    </v-row>
+                    <v-divider class="my-2"/>
+                    <v-row class="d-flex justify-space-around">
 
-                            </v-col>
-                            <v-col
-                                cols="9"
+                        <v-col
+                            cols="3"
+                            class="iconcenter d-flex ma-0 pa-0"
+                        >
+                            <v-icon icon="mdi-github" size="x-large"/>
+
+                        </v-col>
+                        <v-col
+                            cols="9"
+                        >
+                            <v-card-title class="ma-0 pa-0">GitHub</v-card-title>
+                            <a 
+                                href="https://github.com/GustaChiroli" 
+                                target="_blank"
                             >
-                                <v-card-title class="ma-0 pa-0">Birthday</v-card-title>
-                                <v-card-text class="ma-0 pa-0">19/june/1994</v-card-text>
-                            </v-col>
-                        </v-row>
-                        <v-divider class="my-2"/>
-                        <v-row class="d-flex justify-space-around">
+                                Check out my GitHub
+                            </a>
+                        </v-col>
+                    </v-row>
+                                                
 
-                            <v-col
-                                cols="3"
-                                class="iconcenter d-flex ma-0 pa-0"
-                            >
-                                <v-icon icon="mdi-map-marker" size="x-large"/>
-
-                            </v-col>
-                            <v-col
-                                cols="9"
-                            >
-                                <v-card-title class="ma-0 pa-0">Location</v-card-title>
-                                <v-card-text class="ma-0 pa-0">Florianópolis, Brasil</v-card-text>
-                            </v-col>
-                        </v-row>
-                        <v-divider class="my-2"/>
-                        <v-row class="d-flex justify-space-around">
-
-                            <v-col
-                                cols="3"
-                                class="iconcenter d-flex ma-0 pa-0"
-                            >
-                                <v-icon icon="mdi-linkedin" size="x-large"/>
-
-                            </v-col>
-                            <v-col
-                                cols="9"
-                            >
-                                <v-card-title class="ma-0 pa-0">Linkedin</v-card-title>
-                                <a 
-                                    href="https://www.linkedin.com/in/gustavo-da-silva-chiroli-7788ba212/" target="_blank"
-                                >
-                                    Check out my Linkedin
-                                </a>
-                            </v-col>
-                        </v-row>
-                        <v-divider class="my-2"/>
-                        <v-row class="d-flex justify-space-around">
-
-                            <v-col
-                                cols="3"
-                                class="iconcenter d-flex ma-0 pa-0"
-                            >
-                                <v-icon icon="mdi-github" size="x-large"/>
-
-                            </v-col>
-                            <v-col
-                                cols="9"
-                            >
-                                <v-card-title class="ma-0 pa-0">GitHub</v-card-title>
-                                <a 
-                                    href="https://github.com/GustaChiroli" 
-                                    target="_blank"
-                                >
-                                    Check out my GitHub
-                                </a>
-                            </v-col>
-                        </v-row>
-                                                    
-
-                    </v-card>
+                </v-card>
             </v-col>
             <v-col
                 cols="9"
+                class="pl-2"
             >
                 <v-card 
                     color="basil" 
-                    height="100vh"
                     class="rounded-xl"
                 >
                     <v-tabs
@@ -173,35 +194,37 @@
                             <v-card
                                 color="basil"
                                 flat
+                                class="ma-5"
                             >
-                                <v-card-text class="text-center">{{ text }}</v-card-text>
+                                <v-card-text class="text-center" v-if="item == 'Resume'|| 'About' ? false : true "> 
+                                    {{ text }}
+                                </v-card-text>
+                                <resume 
+                                    v-if="item == 'Resume' ? true : false"
+                                />
+                                <aboutme
+                                    v-if="item == 'About'? true : false"
+                                ></aboutme>
                             </v-card>
                         </v-window-item>
                     </v-window>
                 </v-card>
             </v-col>
         </v-row>
-        
-        <!-- <v-banner
-            justify-center
-            avatar="https://cdn.vuetifyjs.com/images/parallax/material.jpg"
-            color="error"
-            icon="mdi-vuetify"
-            lines="three"
-            text="..."
-            stacked
-            >
-            <template v-slot:actions>
-                <v-btn>Click me</v-btn>
-            </template>
-        </v-banner> -->
     </div>
 </template>
 
 <script>
 import imageProfile from '../assets/fotogusta.jpeg'
 import imageBackground from '../assets/mesa-programador2.jpg'
+import resume from '../components/Resume.vue'
+import aboutme from '../components/Aboutme.vue'
+
 export default {
+    components: {
+        resume,
+        aboutme,
+    },
     data() {
         return {
             imageProfile,
@@ -211,7 +234,7 @@ export default {
             items: [
                 'About', 'Resume', 'Portfolio', 'Contact',
             ],
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            text: "Hello! My name is Gustavo, and I am a programming enthusiast, primarily focused on web development using the Vue.js framework. Currently, I am in the penultimate semester of my degree in Analysis and Systems Development, and I'm excited to share a bit about myself and my passion for software development. Throughout my learning journey, I have had the opportunity to explore different languages and technologies. Vue.js has become my primary language, and I have been fascinated by its intuitive and efficient approach to building interactive web interfaces. In addition to Vue.js, I have acquired knowledge in other popular tools such as React, Flutter, JavaScript, and C#. During my internship, I had the chance to apply my skills to practical projects, working with Vue.js, Flutter, Dart, and JavaScript. These experiences provided me with a rich learning environment where I could enhance my problem-solving, teamwork, and communication skills. I am always striving for continuous improvement and expanding my knowledge in web development and related areas. I dedicate time to staying up-to-date with the latest trends and innovations in the technology world by participating in developer communities, reading articles, and working on personal projects. Apart from my passion for programming, I strongly believe in the power of collaboration. I think the best way to achieve exceptional results is through teamwork, sharing knowledge and ideas. I am proactive and always willing to assist my teammates, contributing my technical skills and adaptability. I am excited about the possibilities that programming offers and how we can positively impact people's lives through technology. If you are looking for a developer who is passionate about Vue.js while also having knowledge in other relevant technologies, I am ready to take on challenges and collaborate on exciting projects. I am looking forward to being part of an innovative team where we can create creative and inspiring solutions together. Let's build a bright technological future!",
         }
     }
 }
@@ -253,6 +276,10 @@ export default {
 .iconcenter {
     align-items: center !important;
     justify-content: center !important;
+}
+a {
+    text-decoration: none;
+    color:inherit;
 }
 
 </style>
