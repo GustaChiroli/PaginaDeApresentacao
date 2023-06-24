@@ -204,7 +204,10 @@
                                 />
                                 <aboutme
                                     v-if="item == 'About'? true : false"
-                                ></aboutme>
+                                />
+                                <portfolio
+                                    v-if="item == 'Portfolio'? true : false"
+                                />
                             </v-card>
                         </v-window-item>
                     </v-window>
@@ -219,17 +222,18 @@ import imageProfile from '../assets/fotogusta.jpeg'
 import imageBackground from '../assets/mesa-programador2.jpg'
 import resume from '../components/Resume.vue'
 import aboutme from '../components/Aboutme.vue'
+import portfolio from '../components/portfolio.vue'
 
 export default {
     components: {
         resume,
         aboutme,
+        portfolio,
     },
     data() {
         return {
             imageProfile,
             imageBackground,
-            teste: "500" ,
             tab: 'About',
             items: [
                 'About', 'Resume', 'Portfolio', 'Contact',
