@@ -196,9 +196,6 @@
                                 flat
                                 class="ma-5"
                             >
-                                <v-card-text class="text-center" v-if="item == 'Resume'|| 'About' ? false : true "> 
-                                    {{ text }}
-                                </v-card-text>
                                 <resume 
                                     v-if="item == 'Resume' ? true : false"
                                 />
@@ -207,6 +204,9 @@
                                 />
                                 <portfolio
                                     v-if="item == 'Portfolio'? true : false"
+                                />
+                                <contact
+                                    v-if="item == 'Contact'? true : false"
                                 />
                             </v-card>
                         </v-window-item>
@@ -223,12 +223,14 @@ import imageBackground from '../assets/mesa-programador2.jpg'
 import resume from '../components/Resume.vue'
 import aboutme from '../components/Aboutme.vue'
 import portfolio from '../components/portfolio.vue'
+import contact from '../components/Contact.vue'
 
 export default {
     components: {
         resume,
         aboutme,
         portfolio,
+        contact,
     },
     data() {
         return {

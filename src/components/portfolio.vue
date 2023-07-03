@@ -47,16 +47,16 @@ data() {
     imgprojetocloneresultadosgoogle,
     portfolioItems: [
         {
-        title: 'Projeto Pagina de Apresentação',
-        image: imgprojetoapresentacao,
-        githubLink: 'https://github.com/GustaChiroli/PaginaDeApresentacao',
-        language: 'Vue.js'
+            title: 'Projeto Pagina de Apresentação',
+            image: imgprojetoapresentacao,
+            githubLink: 'https://github.com/GustaChiroli/PaginaDeApresentacao',
+            language: 'Vue.js'
         },
         {
-        title: 'Projeto Sistema Mercado',
-        image: imgprojetomercado,
-        githubLink: 'https://github.com/GustaChiroli/SistemaMercado',
-        language: 'Vue.js'
+            title: 'Projeto Sistema Mercado',
+            image: imgprojetomercado,
+            githubLink: 'https://github.com/GustaChiroli/SistemaMercado',
+            language: 'Vue.js'
         },
         {
             title: 'BMI Calculator',
@@ -71,16 +71,16 @@ data() {
             language: 'Flutter/Dart'
         },
         {
-        title: 'Clone do Google',
-        image: imgprojetoclonedogoogle,
-        githubLink: 'https://github.com/GustaChiroli/clone_do_google',
-        language: 'Html/Css'
+            title: 'Clone do Google',
+            image: imgprojetoclonedogoogle,
+            githubLink: 'https://github.com/GustaChiroli/clone_do_google',
+            language: 'Html/Css'
         },
         {
-        title: 'Clone das pesquisas do Google',
-        image: imgprojetocloneresultadosgoogle,
-        githubLink: 'https://github.com/GustaChiroli/Clone_dos_resultados_do_google',
-        language: 'Html/Css'
+            title: 'Clone das pesquisas do Google',
+            image: imgprojetocloneresultadosgoogle,
+            githubLink: 'https://github.com/GustaChiroli/Clone_dos_resultados_do_google',
+            language: 'Html/Css'
         },
     ]
     };
