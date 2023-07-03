@@ -4,6 +4,7 @@ foi usado:
 | Vue 3 |
 vuetify 3 |
 Vue-router |
+Axios |
 
 Para startar o projeto: npm run dev
 node version: 18.14.2
