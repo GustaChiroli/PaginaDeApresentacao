@@ -1,7 +1,6 @@
 <template>
     <v-container>
-        <v-sheet min-width="300" class="mx-auto">
-
+        <v-sheet min-width="300" max-width="500" class="mx-auto">
             <v-form 
                 ref="form" 
                 class="bg-color"
@@ -9,7 +8,7 @@
             >
                 <v-text-field
                     v-model="accessKey"
-                    type="hidden"
+                    v-show="false"
                 ></v-text-field>
                 <v-text-field
                     v-model="name"

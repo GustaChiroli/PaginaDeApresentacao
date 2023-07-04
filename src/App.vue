@@ -31,4 +31,16 @@ body {
   height: 100vh;
 
 }
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #121212;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #808080;
+  border-radius: 4px;
+}
 </style>

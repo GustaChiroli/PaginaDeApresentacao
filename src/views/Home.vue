@@ -41,9 +41,9 @@
                 class="pr-2"
             >
                 <v-card
-                    class="bg-basil rounded-xl pa-3 mb-5"
+                    class="bg-basil rounded-xl pa-4 mb-7"
                 >
-                    <a href="https://codeload.github.com/GustaChiroli/MyFiles/zip/refs/heads/main">
+                    <a href="https://github.com/GustaChiroli/MyFilesDownload/files/11951019/curriculum.desenvolvedor.WEB.Gustavo.Chiroli.att.docx.pdf">
 
                         <v-row class="d-flex justify-space-around">
                             <v-col
@@ -80,24 +80,24 @@
                             <v-card-text class="ma-0 pa-0">gustavochiroli@hotmail.com</v-card-text>
                         </v-col>
                     </v-row>
-                    <v-divider class="my-2"/>
+                    <v-divider class="my-3"/>
                     <v-row class="d-flex justify-space-around">
 
                         <v-col
                             cols="3"
                             class="iconcenter d-flex ma-0 pa-0"
                         >
-                            <v-icon icon="mdi-cake-layered" size="x-large"/>
+                            <v-icon icon="mdi-translate-variant" size="x-large"/>
 
                         </v-col>
                         <v-col
                             cols="9"
                         >
-                            <v-card-title class="ma-0 pa-0">Birthday</v-card-title>
-                            <v-card-text class="ma-0 pa-0">19/june/1994</v-card-text>
+                            <v-card-title class="ma-0 pa-0">Language</v-card-title>
+                            <v-card-text class="ma-0 pa-0">Portugues/Inglês</v-card-text>
                         </v-col>
                     </v-row>
-                    <v-divider class="my-2"/>
+                    <v-divider class="my-3"/>
                     <v-row class="d-flex justify-space-around">
 
                         <v-col
@@ -114,7 +114,7 @@
                             <v-card-text class="ma-0 pa-0">Florianópolis, Brasil</v-card-text>
                         </v-col>
                     </v-row>
-                    <v-divider class="my-2"/>
+                    <v-divider class="my-3"/>
                     <v-row class="d-flex justify-space-around">
 
                         <v-col
@@ -135,7 +135,7 @@
                             </a>
                         </v-col>
                     </v-row>
-                    <v-divider class="my-2"/>
+                    <v-divider class="my-3"/>
                     <v-row class="d-flex justify-space-around">
 
                         <v-col
@@ -185,7 +185,9 @@
                         </v-tab>
                     </v-tabs>
         
-                    <v-window v-model="tab">
+                    <v-window 
+                        v-model="tab"
+                    >
                         <v-window-item
                             v-for="item in items"
                             :key="item"
@@ -194,20 +196,22 @@
                             <v-card
                                 color="basil"
                                 flat
-                                class="ma-5"
+                                class="ml-5 mt-5 mb-5 mr-0 rounded-xl scrollable-card"
                             >
-                                <resume 
-                                    v-if="item == 'Resume' ? true : false"
-                                />
-                                <aboutme
-                                    v-if="item == 'About'? true : false"
-                                />
-                                <portfolio
-                                    v-if="item == 'Portfolio'? true : false"
-                                />
-                                <contact
-                                    v-if="item == 'Contact'? true : false"
-                                />
+                                <v-scroll-y>
+                                    <resume 
+                                        v-if="item == 'Resume' ? true : false"
+                                    />
+                                    <aboutme
+                                        v-if="item == 'About'? true : false"
+                                    />
+                                    <portfolio
+                                        v-if="item == 'Portfolio'? true : false"
+                                    />
+                                    <contact
+                                        v-if="item == 'Contact'? true : false"
+                                    />
+                                </v-scroll-y>
                             </v-card>
                         </v-window-item>
                     </v-window>
@@ -247,13 +251,30 @@ export default {
 </script>
 
 <style scopped>
+.scrollable-card {
+    max-height: 400px;
+    overflow-y: auto !important;
+    scrollbar-width: thin;
+    scrollbar-color: #808080 #121212;
+}
+.scrollable-card::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scrollable-card::-webkit-scrollbar-track {
+    background-color: #121212;
+}
+
+.scrollable-card::-webkit-scrollbar-thumb {
+    background-color: #808080;
+    border-radius: 4px;
+}
+
 .bgcolor {
     background-color: #121212;
 }
 .colorfonttitle {
     color:azure !important;
-  
-
 }
 .fontsizetitle {
     font-size: 28px !important;
