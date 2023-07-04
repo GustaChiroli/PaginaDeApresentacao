@@ -22,8 +22,8 @@
                 </v-col>
             </v-row>
             <v-row justify-content="space-between">
-                <v-card-text class="textcolor">{{ item.title }}</v-card-text>
-                <v-card-text class="text-end text-red text-h6">{{ item.language }}</v-card-text>
+                <v-card-text class="textcolor text-h8">{{ item.title }}</v-card-text>
+                <v-card-text class="text-end text-red text-h7">{{ item.language }}</v-card-text>
             </v-row>
         </v-card>
       </v-col>

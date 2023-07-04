@@ -37,7 +37,13 @@
         >
 
             <v-col
-                cols="3"
+                cols="12"
+                xxl="3"
+                xl="3"
+                lg="3"
+                md="3"
+                sm="12"
+                xs="12"
                 class="pr-2"
             >
                 <v-card
@@ -162,7 +168,13 @@
                 </v-card>
             </v-col>
             <v-col
-                cols="9"
+                cols="12"
+                xxl="9"
+                xl="9"
+                lg="9"
+                md="9"
+                sm="12"
+                xs="12"
                 class="pl-2"
             >
                 <v-card 
@@ -289,7 +301,7 @@ export default {
 }
 
 .fontsizemenu {
-    font-size: 18px !important;
+    font-size: 16px !important;
 }
 
 .bg-basil {
