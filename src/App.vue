@@ -11,6 +11,11 @@
 
 <script>
 export default {
+  data() {
+    return {
+      baseUrl: 'https://gustachiroli.github.io/portfolio/'
+    }
+  },
   computed: {
     // oculta o nav quando for pagina de login
     haveNoNav() {
@@ -27,10 +32,6 @@ export default {
 </script>
 
 <style scopped>
-body {
-  height: 100vh;
-
-}
 ::-webkit-scrollbar {
   width: 8px;
 }
