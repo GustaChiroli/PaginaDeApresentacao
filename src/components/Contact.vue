@@ -78,7 +78,6 @@ export default {
     methods: {
         async validate () {
             const { valid } = await this.$refs.form.validate()
-            console.log("valid: " + valid);
             if (valid) {return true;}
         },
         reset () {
@@ -90,7 +89,7 @@ export default {
 
         async submit() {
 
-            if (this.validate) {
+            if (await this.validate()) {
                 
                 const formData = {
                     accessKey: this.accessKey,

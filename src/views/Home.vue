@@ -46,7 +46,7 @@
                     md="3"
                     sm="12"
                     xs="12"
-                    class="pr-2 teste"
+                    class="pr-2"
                 >
                     <div class="fixheight fill-height">
 
@@ -180,7 +180,7 @@
                     md="9"
                     sm="12"
                     xs="12"
-                    class="pl-2 teste"
+                    class="pl-2"
                 >
                     <div class="fixheight">
 
