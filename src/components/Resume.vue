@@ -1,5 +1,5 @@
 <template>
-    <v-timeline align="start">
+    <v-timeline align="start" v-if="isLargeScreen">
       <v-timeline-item
         v-for="(item, i) in items"
         :key="i"
@@ -17,12 +17,31 @@
         </v-card>
       </v-timeline-item>
     </v-timeline>
+    <v-timeline v-else side="end">
+      <v-timeline-item
+        v-for="item in items"
+        :key="item.id"
+        :dot-color="item.color"
+        size="small"
+      >
+        <v-alert
+          :value="true"
+          :color="item.color"
+          :icon="item.icon"
+        >
+          <h2>{{ item.title }}</h2>
+          <h5>{{ item.text }}</h5>
+        </v-alert>
+      </v-timeline-item>
+    </v-timeline>
+
   </template>
 
 <script>
 export default {
   name: 'resume',
   data: () => ({
+    isLargeScreen: false,
     items: [
       {
         color: 'red-lighten-2',
@@ -50,6 +69,22 @@ export default {
       },
     ],
   }),
+  mounted() {
+    // Verificar o tamanho da tela ao montar o componente
+    this.checkScreenSize();
+    // Adicionar um ouvinte de redimensionamento da janela para atualizar o estado da tela
+    window.addEventListener('resize', this.checkScreenSize);
+  },
+  beforeUnmount() {
+    // Remover o ouvinte de redimensionamento da janela ao desmontar o componente
+    window.removeEventListener('resize', this.checkScreenSize);
+  },
+  methods: {
+    checkScreenSize() {
+      // Verificar o tamanho da tela e atualizar o estado
+      this.isLargeScreen = window.innerWidth >= 768; // Defina a largura mínima desejada para as telas grandes
+    },
+  },
 }
 </script>
 
