@@ -53,19 +53,9 @@ export default {
 }
 </script>
 
-<!-- <style scoped>
+<style scoped>
 .maxwidth{
   max-width: 375px;
 }
 
-</style> -->
-
-<style>
-.responsive-timeline-item {
-  @media (max-width: 600px) {
-    width: 100% !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-}
 </style>
